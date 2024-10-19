@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel e tesoura</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <header class="flex align-middle justify-center bg-sky-500 text-slate-50 text-8">
+        <h1 class="font-bold font-mono">Pedra Papel e tesoura</h1>
+    </header>
+    <main class="size-full grid col-span-1 py-5">
+        <div class="flex image justify-center size-full">
+            <img src="imagens/icon.png" alt="" class="flex size-80 justify-center align-middle">
+        </div>
+
+        <div class="Submit flex align-middle py-5 justify-center">
+            <button onclick="play()" id="submit" class="bg-slate-400 w-1/4 text-slate-50 font-mono text-xl font-bold rounded-md border-solid border-slate-600 border-2 hover:bg-slate-600">Jogar</button>
+        </div>
+        <div class="Buttons align-middle justify-center gap-5" style="display: none;">
+            <button onclick="test('t')" class="bg-slate-400 w-1/4 text-slate-50 font-mono text-xl font-bold rounded-md border-solid border-slate-600 border-2 hover:bg-slate-600">&#x2702</button>
+            <button onclick="test('pe')" class="bg-slate-400 w-1/4 text-slate-50 font-mono text-xl font-bold rounded-md border-solid border-slate-600 border-2 hover:bg-slate-600">&#x1FAA8</button>
+            <button onclick="test('pa')" class="bg-slate-400 w-1/4 text-slate-50 font-mono text-xl font-bold rounded-md border-solid border-slate-600 border-2 hover:bg-slate-600">&#x1F4DC</button>
+        </div>
+        <div class="Buttons justify-center align-midle py-5" style="display: none;">
+            <p class="bg-slate-400 w-1/4 text-slate-50 font-mono text-xl font-bold rounded-md border-solid border-slate-600 border-2" id="resultado">Resultado</p>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
